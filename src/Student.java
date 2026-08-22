@@ -2,12 +2,12 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class Student {
-    final private String name;
-    final private List<Book> bookList;
+    private final String name;
+    private final List<Book> bookList;
 
     public Student(String name, List<Book> bookList) {
         this.name = name;
-        this.bookList = new LinkedList<>(bookList);
+        this.bookList = bookList;
     }
 
     public String getName() {
